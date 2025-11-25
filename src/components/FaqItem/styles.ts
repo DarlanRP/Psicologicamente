@@ -12,7 +12,7 @@ export const Question = styled.button`
   width: 100%;
   background: none;
   border: none;
-  color: #3b5240;
+  color: #1a3c1e;
   text-align: left;
   cursor: pointer;
   transition: color 0.2s ease;
@@ -20,10 +20,6 @@ export const Question = styled.button`
   span {
     font-size: 1.1rem;
     font-weight: 500;
-  }
-
-  &:hover {
-    color: #2e4a2e;
   }
 
   @media (max-width: 900px) {

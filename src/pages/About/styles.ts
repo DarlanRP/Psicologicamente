@@ -54,10 +54,12 @@ export const AboutMe = styled.div`
   gap: 0.4rem;
 
   > h3 {
-    font-size: clamp(1.2rem, 2vw, 1.5rem);
-    font-weight: 300;
-    color: #2f4f4f;
-    border-bottom: 1.5px solid #2f4f4f;
+    font-size: clamp(2rem, 2vw, 1.5rem);
+
+    font-weight: bold;
+    font-family: "Bellota", Sans-serif;
+    color: #4f5d4e;
+    border-bottom: 1.5px solid #4f5d4e;
     padding-bottom: 4px;
     width: fit-content;
 
@@ -74,6 +76,7 @@ export const AboutMe = styled.div`
 
     @media (max-width: 900px) {
       text-align: center;
+      padding: 1rem 0;
     }
   }
 
@@ -85,7 +88,7 @@ export const AboutMe = styled.div`
     font-family: "Bellota", sans-serif;
     font-size: clamp(1.1rem, 2.2vw, 1.4rem);
     font-weight: 800;
-    color: #2f4f4f;
+    color: #1a3c1e;
 
     > svg {
       background: #6b8e23;
@@ -96,7 +99,7 @@ export const AboutMe = styled.div`
 
     @media (max-width: 900px) {
       justify-content: center;
-      margin-right: 16px;
+      margin-right: 12px;
     }
   }
 `;
@@ -115,7 +118,7 @@ export const SectionBase = styled.div`
     font-family: "Bellota", sans-serif;
     font-size: clamp(1.1rem, 2.2vw, 1.4rem);
     font-weight: 800;
-    color: #2f4f4f;
+    color: #1a3c1e;
 
     > svg {
       background: #6b8e23;
@@ -136,15 +139,39 @@ export const SectionBase = styled.div`
     max-width: 500px;
 
     @media (max-width: 900px) {
+      font-size: 0.95rem;
       margin: 0 auto;
       text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 400px) {
+      font-size: 0.85rem;
     }
   }
 `;
 
 export const Formation = styled(SectionBase)`
-  margin-top: 10px;
+  margin-top: 0.75rem;
 
+  p {
+    margin-top: 0.4rem;
+
+    @media (max-width: 900px) {
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 600px) {
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 400px) {
+      font-size: 0.85rem;
+    }
+  }
   span {
     @media (max-width: 900px) {
       margin-left: 24px;
@@ -155,7 +182,12 @@ export const Formation = styled(SectionBase)`
 
 export const CurrentActivities = styled(SectionBase)`
   margin-top: 1rem;
+  p {
+    margin-top: 0.4rem;
+  }
   span {
+    color: #1a3c1e;
+    margin-top: 1rem;
     @media (max-width: 900px) {
       margin-top: 1rem;
       margin-right: 10px;

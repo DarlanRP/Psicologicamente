@@ -18,10 +18,11 @@ export const FaqContainerItem = styled.div`
 export const Title = styled.h1`
   text-align: center;
   margin-bottom: 2rem;
-  font-size: 2.5rem;
-  color: #3b5240;
+  font-size: clamp(2rem, 2vw, 1.5rem);
+
   font-weight: bold;
   font-family: "Bellota", Sans-serif;
+  color: #4f5d4e;
 
   @media (max-width: 900px) {
     font-size: 2rem;

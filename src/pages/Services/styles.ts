@@ -14,12 +14,16 @@ export const ServicesDiv = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.75rem;
+  gap: 0.4rem;
   width: 100%;
   max-width: 900px;
 
+  @media (max-width: 900px) {
+    gap: 0;
+  }
+
   h3 {
-    font-size: 2.5rem;
+    font-size: clamp(2rem, 2vw, 1.5rem);
     color: #4f5d4e;
     font-weight: bold;
     font-family: "Bellota", Sans-serif;

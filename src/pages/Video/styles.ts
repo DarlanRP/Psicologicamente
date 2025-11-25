@@ -23,6 +23,7 @@ export const ContentWrapper = styled.div`
 `;
 
 export const Title = styled.h1`
+  padding: 0 0.5rem;
   font-size: 2.5rem;
   color: #3b5240;
   font-weight: bold;
